@@ -131,7 +131,7 @@ func (tr *TableRenderer) Render(nodes []*corev1.Node) error {
 	nodesTable.AppendFooter(table.Row{"Total", len(tableRows)})
 
 	fmt.Printf("Nodes at %s:\n", time.Now().Format(time.RFC3339))
-	fmt.Print(nodesTable.Render())
+	fmt.Println(nodesTable.Render())
 
 	return nil
 }
